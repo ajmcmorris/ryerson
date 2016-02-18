@@ -7,7 +7,7 @@
     <meta name="description" content="Ryerson Year End Show 2015 displaying the best work of the academic year">
     <meta name="keywords" content="Ryerson School of Interior Design,Ryerson,RSID,Interior Design,Graphics,Social Media">
     <meta name="author" content="Andre McMorris">
-    <title>Ryerson</title>
+    <title>Ryerson School Of Interior Design</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -53,24 +53,30 @@
     </header>
     
     <div class="container-fluid" >
-
-     
       <main>
-        <div class="col-sm-8 col-sm-offset-2">
+         <div class="col-sm-8 col-sm-offset-2">
            <img src="img/legacy.jpg" class="img-responsive center-block" alt="legacy logo">
          </div>
          <div class="clearfix"></div>
-        <div class="container video">
+         <p class="text-center beebs-font col-sm-8 col-sm-offset-2" id="legacy-info">
+          Dialogue Insi[d] is focused on demonstrating the process behind our work. The following videos display previous year end shows that create a dialogue about our history.
+         </p>
+        
+        <section class="col-sm-8 col-sm-offset-2" id="legacy-video">
+          
+          <div class="container video col-sm-6 col-md-4">
+            <div class='embed-container'>
+              <iframe src='https://player.vimeo.com/video/91700629' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+          </div>
+
+        <div class="container video col-sm-6 col-md-4">
           <div class='embed-container'>
-            <iframe src='https://player.vimeo.com/video/91700629' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe src='https://player.vimeo.com/video/84061192' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
           </div>
         </div>
 
-        <div class="container video">
-            <div class='embed-container'>
-              <iframe src='https://player.vimeo.com/video/84061192' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-            </div>
-        </div>
+        </section>
 
       </main>
     </div>
@@ -82,5 +88,19 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/demo1.js"></script>
+    <script>
+    $(function(){
+      $(".video").hover(function() {
+          $(this).closest(".video").css("z-index", 1);
+
+          // this is where the popping out effect happens
+          $(this).animate({ height: "200", width: "200", left: "-=55", top: "-=55" }, "fast");
+
+      }, function() {
+          $(this).closest(".video").css("z-index", 0);
+          $(this).animate({ height: "90", width: "90", left: "+=55", top: "+=55" }, "fast");
+      });​
+    });
+    </script>
   </body>
 </html>

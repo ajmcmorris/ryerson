@@ -1,17 +1,5 @@
 $(document).ready(function(){
-	setTimeout(function(){
-		$("#dialog").fadeOut(3000,"linear").hide();
-		$("#welcome").fadeIn(3000,"linear").show();
-		$(".cmg-soon").fadeIn(3000,"linear").show();
-	},1500);
-	$("#button").click(function(){
-		$('.opacity-nav').fadeIn("slow").css("display","block");
-	});
-	$("#buttons").click(function(){
-		$('.opacity-nav').fadeOut("slow");
-	});
 
-	
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
@@ -32,6 +20,16 @@ $(document).ready(function(){
 	    }else {
 	        $(this).parent().animate({bottom: "0px" }, {queue: false, duration: 500}).addClass("popped");}
 	    });
-	
+
+	    $('.members').hover(function(){
+	    	$(':nth-child(2)', this).fadeIn();
+	    },function(){
+	    	$(':nth-child(2)', this).fadeOut();
+	    });
+
+	    setTimeout(function(){
+	    	$('#homepage').fadeIn('slow');
+	    },500);
+	   
 
 });

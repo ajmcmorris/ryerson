@@ -93,7 +93,14 @@ header{
 .section-margin{
   padding:180px 0 0 0;
 }
+.comm-text{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 #committee{
+  #com{
+    padding-top:60px;
+  }
   figure{
     margin-bottom:7px;
     figcaption{
@@ -115,6 +122,15 @@ header{
     font-size: 1rem;
     
   }
+}
+.fa-angle-up{
+  font-size: 6rem !important;
+}
+.fa-angle-down{
+  font-size: 6rem !important;
+}
+#legacy-info{
+  margin-top:10px;
 }
 .beebs-neue-font{
   font-family: 'bebas_neueregular';
@@ -165,8 +181,12 @@ form{
   }
 }
 .video{
-  margin-top: 60px;
   margin-bottom:40px;
+  position:relative; 
+  z-index:0px;
+}
+#legacy-video{
+  margin-top: 20px;
 }
 .embed-container { 
   position: relative; 
@@ -184,12 +204,19 @@ form{
 body {
     overflow-x: hidden;
 }
-
+#sponsorship{
+  p{
+    margin:30px 0;
+  }
+}
+#sub-btn{
+  background-color:#b4b4b4;
+  color: #fff;
+}
 #slideout {
     position: fixed;
     height: 400px;
     bottom: -400px;
-    left:13%;
 }
 #clickme:hover{
   cursor: pointer;
@@ -211,6 +238,17 @@ body {
 
 #live-engage{
   margin-top: 20px;
+}
+#homepage{
+  display: none;
+}
+#about-2,#about-3{
+  p{
+      font-size: 2rem;
+  }
+}
+#form-section{
+  margin-top: 40px;
 }
 /*
 .cmg-soon{
@@ -237,6 +275,11 @@ body {
 a{
 	text-decoration: none;
 	
+}
+.members{
+  figcaption{
+    display: none;
+  }
 }
 a:hover,a:visited{
 	text-decoration:none;
@@ -278,7 +321,9 @@ a:hover,a:visited{
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
- 
+  #form-section{
+    margin-top: 0;
+  }
   #slideout {
       left:31%;
   }
@@ -290,6 +335,29 @@ a:hover,a:visited{
   .about-margin{
     margin:100px 0;
   }
+  #about-2,#about-3{
+    p{
+        font-size: rem;
+    }
+  }
+    #committee{
+    figure{
+      margin-bottom:7px;
+      figcaption{
+        h1{
+          font-size: 1rem;
+          margin:0;
+        }
+        dd{
+          font-size: .7rem;
+        }
+      }
+    }
+      p{
+        font-size: 1rem;
+        
+      }
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -300,6 +368,11 @@ a:hover,a:visited{
   }
   .mrg{
     margin:145px 0;
+  }
+  #about-2,#about-3{
+    p{
+        font-size: 3rem;
+    }
   }
 }
 @media (min-width: 1200px){
@@ -323,6 +396,7 @@ a:hover,a:visited{
         top:2%;
         left:0;
         right:0;
+        display: none;
         h1{
           font-size: 1.4rem;
           margin:0;
@@ -333,13 +407,13 @@ a:hover,a:visited{
       }
     }
       p{
-        font-size: 2.3rem;
+        font-size: 2rem;
         
       }
   }
 }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1367px) {
+@media (min-width: 1366px) {
   #homepage{
       margin-top: 7%;
     h1{
@@ -352,7 +426,48 @@ a:hover,a:visited{
       font-size: 4rem;
     }
   }
+  #sponsorship{
+    p{
+      font-size: 3rem;
+    }
+  }
+  #legacy-info{
+    font-size: 2rem;
+    margin-top:30px;
+  }
+  #legacy-video{
+    margin-top: 60px;
+  }
+  #about-2,#about-3{
+    p{
+        font-size: 3rem;
+    }
+  }
   
 }
 
+@media (min-width: 1600px){
+  #sponsorship{
+    p{
+      font-size: 3.5rem;
+    }
+  }
+  #live-engage{
+    p{
+      font-size: 2rem;
+    }
+  }
+  #legacy-info{
+    font-size: 3rem;
+    margin-top:30px;
+  }
+  #legacy-video{
+    margin-top: 60px;
+  }
+  #about-2,#about-3{
+    p{
+        font-size: 4rem;
+    }
+  }
+}
 
