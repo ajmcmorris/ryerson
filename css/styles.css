@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url("../fonts/bebasneue-webfont.eot");
+  src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff2") format("woff2"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'bebasregular';
+  src: url("../fonts/bebas___-webfont.eot");
+  src: url("../fonts/bebas___-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebas___-webfont.woff2") format("woff2"), url("../fonts/bebas___-webfont.woff") format("woff"), url("../fonts/bebas___-webfont.ttf") format("truetype"), url("../fonts/bebas___-webfont.svg#bebasregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  color: #000; }
+
+.blue-font {
+  color: #0000ff; }
+
+.pwd-font {
+  color: #bfd7fc; }
+
+.light-font {
+  color: #5895fb; }
+
+.wht-font {
+  color: #fff; }
+
+i:hover {
+  cursor: pointer; }
+
+i {
+  margin: 10px 0 0 20px; }
+
+.bkg {
+  z-index: -1;
+  position: fixed; }
+
+header {
+  margin-bottom: 30px; }
+
+/*NEW STUFF*/
+#homepage h1 {
+  font-size: 2.7rem; }
+#homepage h2 {
+  font-size: 2rem;
+  margin: 0 0 0 0; }
+#homepage h3 {
+  font-size: 2rem; }
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem; }
+  .about-section div {
+    align-self: center; }
+  .about-section .up-mrg {
+    margin-bottom: 30px; }
+  .about-section .btm-mrg {
+    margin-top: 30px; }
+
+#concept-logo {
+  margin-bottom: 50px; }
+
+.about-margin {
+  margin: 160px 0; }
+
+.section-margin {
+  padding: 180px 0 0 0; }
+
+#committee figure {
+  margin-bottom: 7px; }
+  #committee figure figcaption {
+    font-size: 1rem;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0; }
+    #committee figure figcaption h1 {
+      font-size: 2rem;
+      margin: 0; }
+    #committee figure figcaption dd {
+      font-size: 1.6rem; }
+#committee p {
+  font-size: 1rem; }
+
+.beebs-neue-font {
+  font-family: 'bebas_neueregular'; }
+
+.beebs-font {
+  font-family: 'bebasregular'; }
+
+address {
+  font-size: 2rem; }
+
+form input, form textarea {
+  background-color: #b4b4b4 !important;
+  color: #fff !important; }
+form ::-webkit-input-placeholder {
+  color: #fff !important; }
+form :-moz-placeholder {
+  color: #fff !important; }
+form ::-moz-placeholder {
+  color: #fff !important; }
+form :-ms-input-placeholder {
+  color: #fff !important; }
+
+#sponsor-btns a {
+  margin: 0 7px; }
+
+/*NEW STUFF END*/
+.icon-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 888; }
+  .icon-list li {
+    text-decoration: none;
+    display: inline-block; }
+    .icon-list li img {
+      margin: 4px 0; }
+
+.video {
+  margin-top: 60px;
+  margin-bottom: 40px; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  overflow-x: hidden; }
+
+#slideout {
+  position: fixed;
+  height: 400px;
+  bottom: -400px;
+  left: 13%; }
+
+#clickme:hover {
+  cursor: pointer; }
+
+#clickme {
+  position: absolute;
+  top: -55px;
+  margin: 0 87px; }
+
+.instagram-content {
+  margin-top: 40px; }
+
+#slidecontent {
+  float: left; }
+
+#map-canvas {
+  margin: 20px 0; }
+
+#live-engage {
+  margin-top: 20px; }
+
+/*
+.cmg-soon{
+  margin-top: 250px;
+  color: #000;
+  display:none;
+}*/
+.blue-text {
+  color: #0000FF; }
+
+.white-text {
+  color: #fff; }
+
+#welcome {
+  display: none; }
+
+.blk-font {
+  color: #000; }
+
+.vis-hide {
+  visibility: hidden; }
+
+a {
+  text-decoration: none; }
+
+a:hover, a:visited {
+  text-decoration: none; }
+
+/* Instagram stuff*/
+.instagram-wrap {
+  background: beige; }
+
+.photo-box {
+  margin: 0 0 30px 0; }
+  .photo-box .image-wrap img {
+    width: 100%; }
+  .photo-box .description {
+    font-size: 12px;
+    color: #333;
+    letter-spacing: 1px;
+    padding: 15px;
+    height: 75px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .photo-box .coms {
+    color: #000 !important;
+    text-decoration: none; }
+
+#shy {
+  margin-top: 10px !important; }
+
+#buttons i {
+  color: #ffffff; }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #slideout {
+    left: 31%; }
+
+  #about-section {
+    min-height: 400px;
+    font-size: 2rem; }
+
+  .about-margin {
+    margin: 100px 0; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #slideout {
+    left: 40%; }
+
+  .mrg {
+    margin: 145px 0; } }
+@media (min-width: 1200px) {
+  #homepage h1 {
+    font-size: 3.4rem; }
+  #homepage h2 {
+    font-size: 2rem; }
+  #homepage h3 {
+    font-size: 2rem; }
+
+  #committee figure {
+    margin-bottom: 7px; }
+    #committee figure figcaption {
+      font-size: 1rem;
+      position: absolute;
+      top: 2%;
+      left: 0;
+      right: 0; }
+      #committee figure figcaption h1 {
+        font-size: 1.4rem;
+        margin: 0; }
+      #committee figure figcaption dd {
+        font-size: 1rem; }
+  #committee p {
+    font-size: 2.3rem; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1367px) {
+  #homepage {
+    margin-top: 7%; }
+    #homepage h1 {
+      font-size: 5.4rem; }
+    #homepage h2 {
+      font-size: 4rem; }
+    #homepage h3 {
+      font-size: 4rem; } }
+
+/*# sourceMappingURL=styles.css.map */
