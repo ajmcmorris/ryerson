@@ -32,7 +32,7 @@ body{
     color: #000;
   }
 .blue-font{
-  color: $blue;
+  color: #2e3192;
 }
 .pwd-font{
   color: $pwd-blue;
@@ -49,18 +49,31 @@ i:hover{
 i{
   margin:10px 0 0 20px;
 }
+.arrow-mrg-top{
+  margin-top: 80px;
+}
+.arrow-mrg-btm{
+  margin-bottom: 80px;
+}
 .bkg{	
 	z-index:-1;
   position: fixed;
 }
-header{
-  margin-bottom:30px;
+#trigger-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+#committee-welcome-image {
+    margin-top: 60px;
 }
 /*NEW STUFF*/
 #homepage{
 
   h1{
     font-size: 2.7rem;
+    margin-top: 60px;
   }
   h2{
     font-size: 2rem;
@@ -73,7 +86,6 @@ header{
 .about-section{
   display: flex;
   justify-content: center;
-  font-size: 1.7rem;
   div{
     align-self: center;
   }
@@ -98,9 +110,7 @@ header{
   padding-bottom: 15px;
 }
 #committee{
-  #com{
-    padding-top:60px;
-  }
+
   figure{
     margin-bottom:7px;
     figcaption{
@@ -177,6 +187,7 @@ form{
     display: inline-block;
     img{
       margin: 4px 0;
+      width:25px;
     }
   }
 }
@@ -207,6 +218,7 @@ body {
 #sponsorship{
   p{
     margin:30px 0;
+    font-size: 1.6rem;
   }
 }
 #sub-btn{
@@ -226,6 +238,9 @@ body {
     top: -55px; 
     margin: 0 87px;
 }
+#dia-text{
+  vertical-align: top;
+}
 .instagram-content {
     margin-top: 40px;
 }
@@ -235,7 +250,9 @@ body {
 #map-canvas{
   margin: 20px 0;
 }
-
+.fa-bars{
+  color: #2e3192;
+}
 #live-engage{
   margin-top: 20px;
 }
@@ -244,11 +261,14 @@ body {
 }
 #about-2,#about-3{
   p{
-      font-size: 2rem;
+      font-size: 1rem;
   }
 }
 #form-section{
   margin-top: 40px;
+}
+.contact-body {
+   margin-top: 60px;
 }
 /*
 .cmg-soon{
@@ -324,20 +344,39 @@ a:hover,a:visited{
   #form-section{
     margin-top: 0;
   }
+  .clear-small{
+    clear: both;
+  }
+  #about-logo{
+    width: 60%;
+  }
+  #sponsorship{
+    p{
+      margin:30px 0;
+      font-size: 2rem;
+    }
+  }
   #slideout {
       left:31%;
   }
-
+  #live-engage{
+    p{
+      font-size: 2rem;
+    }
+  }
   #about-section{
     min-height: 400px;
     font-size: 2rem
   }
-  .about-margin{
-    margin:100px 0;
-  }
   #about-2,#about-3{
+    .about2{
+        font-size: 2rem;
+    }
+    .about3{
+      font-size: 2rem;
+    }
     p{
-        font-size: rem;
+      font-size: 2rem;
     }
   }
     #committee{
@@ -354,7 +393,7 @@ a:hover,a:visited{
       }
     }
       p{
-        font-size: 1rem;
+        font-size: .9rem;
         
       }
   }
@@ -362,20 +401,33 @@ a:hover,a:visited{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
     #slideout {
       left:40%;
   }
   .mrg{
     margin:145px 0;
   }
+  #about-concept{
+    width: 40%;
+  }
   #about-2,#about-3{
+    
+  .about2{
+      font-size: 2rem;
+    }
+    .about3{
+      font-size: 2rem;
+    }
     p{
-        font-size: 3rem;
+      font-size: 2rem;
     }
   }
 }
 @media (min-width: 1200px){
+
+  #homepage-logo,#about-logo{
+    width: 60%;
+  }
   #homepage{
     h1{
       font-size: 3.4rem;
@@ -384,6 +436,11 @@ a:hover,a:visited{
       font-size: 2rem;
     }
     h3{
+      font-size: 2rem;
+    }
+  }
+  #live-engage{
+    p{
       font-size: 2rem;
     }
   }
@@ -398,16 +455,16 @@ a:hover,a:visited{
         right:0;
         display: none;
         h1{
-          font-size: 1.4rem;
+          font-size: 1rem;
           margin:0;
         }
         dd{
-          font-size: 1rem;
+          font-size: .9rem;
         }
       }
     }
       p{
-        font-size: 2rem;
+        font-size: 1.4rem;
         
       }
   }
@@ -439,8 +496,15 @@ a:hover,a:visited{
     margin-top: 60px;
   }
   #about-2,#about-3{
+    
+    .about2{
+        font-size: 2.4rem;
+    }
+    .about3{
+      font-size: 2.4rem;
+    }
     p{
-        font-size: 3rem;
+      font-size: 2.4rem;
     }
   }
   
@@ -465,8 +529,12 @@ a:hover,a:visited{
     margin-top: 60px;
   }
   #about-2,#about-3{
-    p{
-        font-size: 4rem;
+      
+    .about2{
+      font-size: 4rem;
+    }
+    .about3{
+      font-size: 4rem;
     }
   }
 }

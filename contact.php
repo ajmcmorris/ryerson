@@ -1,42 +1,18 @@
-<?php
-    if (isset($_POST["submit"])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
-        $human = intval($_POST['human']);
-        $from = 'Demo Contact Form'; 
-        $to = 'example@bootstrapbay.com'; 
-        $subject = 'Message from Contact Demo ';
-        
-        $body = "From: $name\n E-Mail: $email\n Message:\n $message";
- 
-        // Check if name has been entered
-        if (!$_POST['name']) {
-            $errName = 'Please enter your name';
-        }
-        
-        // Check if email has been entered and is valid
-        if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-            $errEmail = 'Please enter a valid email address';
-        }
-        
-        //Check if message has been entered
-        if (!$_POST['message']) {
-            $errMessage = 'Please enter your message';
-        }
-        //Check if simple anti-bot test is correct
-        if ($human !== 5) {
-            $errHuman = 'Your anti-spam is incorrect';
-        }
- 
-// If there are no errors, send the email
-if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-    if (mail ($to, $subject, $body, $from)) {
-        $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-    } else {
-        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-    }
-}
+<?php 
+if(isset($_POST['submit'])){
+    $to = "insid2016@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = "Ryerson School Of Interior Design";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    //echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
     }
 ?>
 <!DOCTYPE html>
@@ -48,7 +24,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <meta name="description" content="Ryerson Year End Show 2015 displaying the best work of the academic year">
     <meta name="keywords" content="Ryerson School of Interior Design,Ryerson,RSID,Interior Design,Graphics,Social Media">
     <meta name="author" content="Andre McMorris">
-    <title>Ryerson</title>
+    <title>Ryerson School Of Interior Design</title>
 
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -70,8 +46,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   </head>
   <body>
   
-    <header>
-      <i class="fa fa-bars fa-3x" id="trigger-overlay"></i>
+      <i class="fa fa-bars fa-2x" id="trigger-overlay"></i>
       <!-- open/close -->
     <div class="overlay overlay-slidedown">
       <button type="button" class="overlay-close">Close</button>
@@ -81,10 +56,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="committee.html">Committee</a></li>
-          <li><a href="legacy.html">Legacy</a></li>
+          <li><a href="legacy.html">Teasers</a></li>
           <li><a href="live.html">Live</a></li>
           <li><a href="sponsorship.html">Sponsorship</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -94,12 +69,11 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
        <li><a href="https://www.linkedin.com/groups/8431642" target="_blank"><img src="img/linkedin1.png" class="img-responsive" alt=""></a></li>
        <li><a href="https://twitter.com/INSID2016YES" target="_blank"><img src="img/twitter.png" class="img-responsive" alt=""></a></li>
      </ul>       
-    </header>
 
     <div class="container-fluid" >
       
 
-      <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-12 contact-body">
+      <div class="col-sm-offset-1 col-sm-10 col-xs-12 contact-body">
       
        <section>
          <div class="col-md-6">
@@ -114,19 +88,18 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
          <div class="col-md-6" id="form-section">
            <h1 class="beebs-neue-font blk-font">CONTACT US</h1>
            <h2 id="shy" class="beebs-neue-font blue-font">don't be shy!</h2>
-           <form class="beebs-font" role="form" method="post" action="index.php">
+           <form class="beebs-font" role="form" method="post" action="contact.php">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                <?php echo "<p class='text-danger'>$errName</p>";?>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" >
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                 <?php echo "<p class='text-danger'>$errEmail</p>";?>
               </div>
               <div class="form-group">
-                <textarea class="form-control" rows="10" placeholder="Message" id="message" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+                <textarea class="form-control" rows="10" placeholder="Message" id="message" name="message"></textarea>
               </div>
-              <button type="submit" class="btn btn-default" id="sub-btn">Submit</button>
+              <button type="submit" name="submit" value="Submit" class="btn btn-default" id="sub-btn">Submit</button>
             </form>
          </div>
         

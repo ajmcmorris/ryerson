@@ -9,6 +9,17 @@
 		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
 		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
 }
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/bebas___-webfont.eot');
+    src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas___-webfont.woff2') format('woff2'),
+         url('../fonts/bebas___-webfont.woff') format('woff'),
+         url('../fonts/bebas___-webfont.ttf') format('truetype'),
+         url('../fonts/bebas___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Overlay style */
 .overlay {
 	position: fixed;
@@ -17,7 +28,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #000;
+	background: #fff;
 }
 
 /* Overlay closing cross */
@@ -48,8 +59,7 @@
 .overlay ul {
 	list-style: none;
 	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
+	margin-left:40px;
 	height: 100%;
 	position: relative;
 }
@@ -62,19 +72,20 @@
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #2e3192;
+}
 
 .overlay ul li a {
 	font-size: 3rem;
 	font-weight: 300;
 	display: block;
-	color: #fff;
+	color: #000;
+	font-family: 'bebasregular';
+	text-align: left;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-}
-
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #e3fcb1;
 }
 
 /* Effects */

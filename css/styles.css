@@ -14,7 +14,7 @@ body {
   color: #000; }
 
 .blue-font {
-  color: #0000ff; }
+  color: #2e3192; }
 
 .pwd-font {
   color: #bfd7fc; }
@@ -31,16 +31,29 @@ i:hover {
 i {
   margin: 10px 0 0 20px; }
 
+.arrow-mrg-top {
+  margin-top: 80px; }
+
+.arrow-mrg-btm {
+  margin-bottom: 80px; }
+
 .bkg {
   z-index: -1;
   position: fixed; }
 
-header {
-  margin-bottom: 30px; }
+#trigger-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900; }
+
+#committee-welcome-image {
+  margin-top: 60px; }
 
 /*NEW STUFF*/
 #homepage h1 {
-  font-size: 2.7rem; }
+  font-size: 2.7rem;
+  margin-top: 60px; }
 #homepage h2 {
   font-size: 2rem;
   margin: 0 0 0 0; }
@@ -49,8 +62,7 @@ header {
 
 .about-section {
   display: flex;
-  justify-content: center;
-  font-size: 1.7rem; }
+  justify-content: center; }
   .about-section div {
     align-self: center; }
   .about-section .up-mrg {
@@ -71,8 +83,6 @@ header {
   padding-top: 15px;
   padding-bottom: 15px; }
 
-#committee #com {
-  padding-top: 60px; }
 #committee figure {
   margin-bottom: 7px; }
   #committee figure figcaption {
@@ -133,7 +143,8 @@ form :-ms-input-placeholder {
     text-decoration: none;
     display: inline-block; }
     .icon-list li img {
-      margin: 4px 0; }
+      margin: 4px 0;
+      width: 25px; }
 
 .video {
   margin-bottom: 40px;
@@ -161,7 +172,8 @@ body {
   overflow-x: hidden; }
 
 #sponsorship p {
-  margin: 30px 0; }
+  margin: 30px 0;
+  font-size: 1.6rem; }
 
 #sub-btn {
   background-color: #b4b4b4;
@@ -180,6 +192,9 @@ body {
   top: -55px;
   margin: 0 87px; }
 
+#dia-text {
+  vertical-align: top; }
+
 .instagram-content {
   margin-top: 40px; }
 
@@ -189,6 +204,9 @@ body {
 #map-canvas {
   margin: 20px 0; }
 
+.fa-bars {
+  color: #2e3192; }
+
 #live-engage {
   margin-top: 20px; }
 
@@ -196,10 +214,13 @@ body {
   display: none; }
 
 #about-2 p, #about-3 p {
-  font-size: 2rem; }
+  font-size: 1rem; }
 
 #form-section {
   margin-top: 40px; }
+
+.contact-body {
+  margin-top: 60px; }
 
 /*
 .cmg-soon{
@@ -263,18 +284,32 @@ a:hover, a:visited {
   #form-section {
     margin-top: 0; }
 
+  .clear-small {
+    clear: both; }
+
+  #about-logo {
+    width: 60%; }
+
+  #sponsorship p {
+    margin: 30px 0;
+    font-size: 2rem; }
+
   #slideout {
     left: 31%; }
+
+  #live-engage p {
+    font-size: 2rem; }
 
   #about-section {
     min-height: 400px;
     font-size: 2rem; }
 
-  .about-margin {
-    margin: 100px 0; }
-
+  #about-2 .about2, #about-3 .about2 {
+    font-size: 2rem; }
+  #about-2 .about3, #about-3 .about3 {
+    font-size: 2rem; }
   #about-2 p, #about-3 p {
-    font-size: rem; }
+    font-size: 2rem; }
 
   #committee figure {
     margin-bottom: 7px; }
@@ -284,7 +319,7 @@ a:hover, a:visited {
     #committee figure figcaption dd {
       font-size: .7rem; }
   #committee p {
-    font-size: 1rem; } }
+    font-size: .9rem; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #slideout {
@@ -293,14 +328,27 @@ a:hover, a:visited {
   .mrg {
     margin: 145px 0; }
 
+  #about-concept {
+    width: 40%; }
+
+  #about-2 .about2, #about-3 .about2 {
+    font-size: 2rem; }
+  #about-2 .about3, #about-3 .about3 {
+    font-size: 2rem; }
   #about-2 p, #about-3 p {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
 @media (min-width: 1200px) {
+  #homepage-logo, #about-logo {
+    width: 60%; }
+
   #homepage h1 {
     font-size: 3.4rem; }
   #homepage h2 {
     font-size: 2rem; }
   #homepage h3 {
+    font-size: 2rem; }
+
+  #live-engage p {
     font-size: 2rem; }
 
   #committee figure {
@@ -313,12 +361,12 @@ a:hover, a:visited {
       right: 0;
       display: none; }
       #committee figure figcaption h1 {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin: 0; }
       #committee figure figcaption dd {
-        font-size: 1rem; }
+        font-size: .9rem; }
   #committee p {
-    font-size: 2rem; } }
+    font-size: 1.4rem; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1366px) {
   #homepage {
@@ -340,8 +388,12 @@ a:hover, a:visited {
   #legacy-video {
     margin-top: 60px; }
 
+  #about-2 .about2, #about-3 .about2 {
+    font-size: 2.4rem; }
+  #about-2 .about3, #about-3 .about3 {
+    font-size: 2.4rem; }
   #about-2 p, #about-3 p {
-    font-size: 3rem; } }
+    font-size: 2.4rem; } }
 @media (min-width: 1600px) {
   #sponsorship p {
     font-size: 3.5rem; }
@@ -356,7 +408,9 @@ a:hover, a:visited {
   #legacy-video {
     margin-top: 60px; }
 
-  #about-2 p, #about-3 p {
+  #about-2 .about2, #about-3 .about2 {
+    font-size: 4rem; }
+  #about-2 .about3, #about-3 .about3 {
     font-size: 4rem; } }
 
 /*# sourceMappingURL=styles.css.map */
