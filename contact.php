@@ -56,8 +56,10 @@ if(isset($_POST['submit'])){
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="committee.html">Committee</a></li>
+          <li><a href="grads.html">Grads</a></li>
           <li><a href="legacy.html">Teasers</a></li>
           <li><a href="live.html">Live</a></li>
+          <li><a href="pop-up.html">Pop Up</a></li>
           <li><a href="sponsorship.html">Sponsorship</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
@@ -77,12 +79,12 @@ if(isset($_POST['submit'])){
       
        <section>
          <div class="col-md-6">
-          <iframe id="map-canvas" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfRg6TTXL1IkRKzVtYzj1CWY&key=AIzaSyCNPJiFW72d2uMa0y_0fkaVJJatVqdy-Wo" allowfullscreen></iframe>
-          <address class="beebs-font text-left blk-font">
+         <iframe id="map-canvas" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ38q7dzXL1IkRHiF4_kcWm9s&key=AIzaSyCNPJiFW72d2uMa0y_0fkaVJJatVqdy-Wo" allowfullscreen></iframe>
+          <!--<iframe id="map-canvas" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfRg6TTXL1IkRKzVtYzj1CWY&key=AIzaSyCNPJiFW72d2uMa0y_0fkaVJJatVqdy-Wo" allowfullscreen></iframe>
+          --><address class="beebs-font text-left blk-font">
           <strong>Ryerson School of Interior Design.</strong><br>
-          350 Victoria Street<br>
+          303 Church Street<br>
           Toronto, ON, M5B 2K3<br>
-          <abbr title="Phone">P:</abbr> (416) 979-5000
         </address>
          </div>
          <div class="col-md-6" id="form-section">

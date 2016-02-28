@@ -52,13 +52,13 @@ i {
 
 /*NEW STUFF*/
 #homepage h1 {
-  font-size: 2.7rem;
-  margin-top: 60px; }
-#homepage h2 {
   font-size: 2rem;
-  margin: 0 0 0 0; }
+  margin-top: 80px; }
+#homepage h2 {
+  font-size: 1.7rem;
+  margin: 15px 0 0 0; }
 #homepage h3 {
-  font-size: 2rem; }
+  font-size: 1.7rem; }
 
 .about-section {
   display: flex;
@@ -106,7 +106,7 @@ i {
   font-size: 6rem !important; }
 
 #legacy-info {
-  margin-top: 10px; }
+  margin-top: 30px; }
 
 .beebs-neue-font {
   font-family: 'bebas_neueregular'; }
@@ -115,7 +115,7 @@ i {
   font-family: 'bebasregular'; }
 
 address {
-  font-size: 2rem; }
+  font-size: 1.6rem; }
 
 form input, form textarea {
   background-color: #b4b4b4 !important;
@@ -222,12 +222,9 @@ body {
 .contact-body {
   margin-top: 60px; }
 
-/*
-.cmg-soon{
-  margin-top: 250px;
-  color: #000;
-  display:none;
-}*/
+.cmg-soon {
+  margin-top: 40% !important; }
+
 .blue-text {
   color: #0000FF; }
 
@@ -247,10 +244,21 @@ a {
   text-decoration: none; }
 
 .members figcaption {
-  display: none; }
+  display: none;
+  position: relative; }
+.members img {
+  position: relative;
+  transition: 0.3s ease;
+  cursor: pointer; }
+.members img:hover {
+  transform: scale(1.8, 1.8);
+  z-index: 998; }
 
 a:hover, a:visited {
   text-decoration: none; }
+
+.form-control {
+  border-radius: 0 !important; }
 
 /* Instagram stuff*/
 .instagram-wrap {
@@ -281,6 +289,15 @@ a:hover, a:visited {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #live-body .icon-list, #live-body #trigger-overlay {
+    position: fixed; }
+
+  #clickme {
+    width: 20%;
+    position: absolute;
+    top: -46px;
+    margin: 0 87px; }
+
   #form-section {
     margin-top: 0; }
 
@@ -292,7 +309,7 @@ a:hover, a:visited {
 
   #sponsorship p {
     margin: 30px 0;
-    font-size: 2rem; }
+    font-size: 1.6rem; }
 
   #slideout {
     left: 31%; }
@@ -305,19 +322,38 @@ a:hover, a:visited {
     font-size: 2rem; }
 
   #about-2 .about2, #about-3 .about2 {
-    font-size: 2rem; }
+    font-size: 1.6rem; }
   #about-2 .about3, #about-3 .about3 {
-    font-size: 2rem; }
+    font-size: 1.6rem; }
   #about-2 p, #about-3 p {
-    font-size: 2rem; }
+    font-size: 1.6rem; }
 
   #committee figure {
     margin-bottom: 7px; }
-    #committee figure figcaption h1 {
+    #committee figure figcaption {
       font-size: 1rem;
-      margin: 0; }
-    #committee figure figcaption dd {
-      font-size: .7rem; }
+      position: absolute;
+      top: 2%;
+      left: 0;
+      right: 0;
+      display: none; }
+      #committee figure figcaption h1 {
+        font-size: .9rem;
+        margin: 0; }
+      #committee figure figcaption dd {
+        position: absolute;
+        font-size: .9rem;
+        top: -27px;
+        left: 0;
+        right: 0;
+        z-index: 9999; }
+      #committee figure figcaption dt {
+        position: absolute;
+        font-size: .9rem;
+        top: -35px;
+        left: 0;
+        right: 0;
+        z-index: 9999; }
   #committee p {
     font-size: .9rem; } }
 /* Medium devices (desktops, 992px and up) */
@@ -331,12 +367,32 @@ a:hover, a:visited {
   #about-concept {
     width: 40%; }
 
-  #about-2 .about2, #about-3 .about2 {
-    font-size: 2rem; }
-  #about-2 .about3, #about-3 .about3 {
-    font-size: 2rem; }
-  #about-2 p, #about-3 p {
-    font-size: 2rem; } }
+  #committee figure {
+    margin-bottom: 7px; }
+    #committee figure figcaption {
+      font-size: 1rem;
+      position: absolute;
+      top: 2%;
+      left: 0;
+      right: 0;
+      display: none; }
+      #committee figure figcaption h1 {
+        font-size: 1.4rem;
+        margin: 0; }
+      #committee figure figcaption dd {
+        position: absolute;
+        font-size: 1.4rem;
+        top: -40px;
+        left: 0;
+        right: 0;
+        z-index: 9999; }
+      #committee figure figcaption dt {
+        position: absolute;
+        font-size: 1.4rem;
+        top: -52px;
+        left: 0;
+        right: 0;
+        z-index: 9999; } }
 @media (min-width: 1200px) {
   #homepage-logo, #about-logo {
     width: 60%; }
@@ -349,7 +405,7 @@ a:hover, a:visited {
     font-size: 2rem; }
 
   #live-engage p {
-    font-size: 2rem; }
+    font-size: 1.6rem; }
 
   #committee figure {
     margin-bottom: 7px; }
@@ -361,10 +417,22 @@ a:hover, a:visited {
       right: 0;
       display: none; }
       #committee figure figcaption h1 {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin: 0; }
+      #committee figure figcaption dt {
+        position: absolute;
+        font-size: 1.6rem;
+        top: -63px;
+        left: 0;
+        right: 0;
+        z-index: 9999; }
       #committee figure figcaption dd {
-        font-size: .9rem; }
+        font-size: 1.6rem;
+        position: absolute;
+        top: -48px;
+        left: 0;
+        right: 0;
+        z-index: 9999; }
   #committee p {
     font-size: 1.4rem; } }
 /* Large devices (large desktops, 1200px and up) */
@@ -372,11 +440,11 @@ a:hover, a:visited {
   #homepage {
     margin-top: 7%; }
     #homepage h1 {
-      font-size: 5.4rem; }
+      font-size: 3.4rem; }
     #homepage h2 {
-      font-size: 4rem; }
+      font-size: 2.4rem; }
     #homepage h3 {
-      font-size: 4rem; }
+      font-size: 2.4rem; }
 
   #sponsorship p {
     font-size: 3rem; }
@@ -386,15 +454,17 @@ a:hover, a:visited {
     margin-top: 30px; }
 
   #legacy-video {
-    margin-top: 60px; }
-
-  #about-2 .about2, #about-3 .about2 {
-    font-size: 2.4rem; }
-  #about-2 .about3, #about-3 .about3 {
-    font-size: 2.4rem; }
-  #about-2 p, #about-3 p {
-    font-size: 2.4rem; } }
+    margin-top: 60px; } }
 @media (min-width: 1600px) {
+  #homepage {
+    margin-top: 7%; }
+    #homepage h1 {
+      font-size: 3.4rem; }
+    #homepage h2 {
+      font-size: 2.4rem; }
+    #homepage h3 {
+      font-size: 2.4rem; }
+
   #sponsorship p {
     font-size: 3.5rem; }
 
@@ -409,8 +479,10 @@ a:hover, a:visited {
     margin-top: 60px; }
 
   #about-2 .about2, #about-3 .about2 {
-    font-size: 4rem; }
+    font-size: 2.3rem; }
   #about-2 .about3, #about-3 .about3 {
-    font-size: 4rem; } }
+    font-size: 2.3rem; }
+  #about-2 p, #about-3 p {
+    font-size: 2.3rem; } }
 
 /*# sourceMappingURL=styles.css.map */

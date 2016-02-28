@@ -21,15 +21,32 @@ $(document).ready(function(){
 	        $(this).parent().animate({bottom: "0px" }, {queue: false, duration: 500}).addClass("popped");}
 	    });
 
+	    var timer;
 	    $('.members').hover(function(){
-	    	$(':nth-child(2)', this).fadeIn();
+	    	var self = this;
+	    	  timer = setTimeout(function(){
+	    		console.log('timeout set' + timer);
+	    		$(':nth-child(2)', self).fadeIn();
+	    	},500);
 	    },function(){
-	    	$(':nth-child(2)', this).fadeOut();
+	    	$(':nth-child(2)', this).hide();
+	    	clearTimeout(timer);
+	    	console.log('timeout cleared' +timer);
 	    });
 
 	    setTimeout(function(){
 	    	$('#homepage').fadeIn('slow');
 	    },500);
+
+	    function setHeight() {
+          windowHeight = $(window).innerHeight();
+          $('.full-height-section').css('min-height', windowHeight);
+        };
+        setHeight();
+        
+        $(window).resize(function() {
+          setHeight();
+        });
 	   
 
 });
