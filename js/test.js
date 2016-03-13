@@ -9,7 +9,15 @@ $(function() {
         limit: 60,
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
-        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img src="{{image}}"></a></div><div class="description">{{caption}}<a href="{{link}}" target="_blank"><div class="coms">{{comments}} Comments</div></a><div class="loc">{{location}}</div></div></div></div>'
-    });
+        template: '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"><div class="photo-box"><div class="image-wrap"><a href="{{link}}"><img class="lazy" src="/link/to/placeholder.jpg" data-original="{{image}}"></a></div><div class="description">{{caption}}<a href="{{link}}" target="_blank"><div class="coms">{{comments}} Comments</div></a><div class="loc">{{location}}</div></div></div></div>',
+        after: function () {
+            // run lazyloader
+            $("img.lazy").lazyload({
+                effect : "fadeIn"
+            });
+          }
+    }); 
     feed.run();
+
+    
 });

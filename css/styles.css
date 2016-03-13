@@ -11,10 +11,14 @@
   font-weight: normal;
   font-style: normal; }
 body {
-  color: #000; }
+  color: #000;
+  font-size: 1.4rem; }
 
 .blue-font {
   color: #2e3192; }
+
+.blue-bkg {
+  background-color: #2e3192; }
 
 .pwd-font {
   color: #bfd7fc; }
@@ -22,8 +26,20 @@ body {
 .light-font {
   color: #5895fb; }
 
+.blog-number {
+  font-size: 13rem; }
+
 .wht-font {
   color: #fff; }
+
+.wht-bars {
+  color: #fff !important; }
+
+.blog-aside {
+  margin-bottom: 60px; }
+  .blog-aside h2 {
+    margin: 0 0 53px 0;
+    font-size: 2rem; }
 
 i:hover {
   cursor: pointer; }
@@ -42,10 +58,13 @@ i {
   position: fixed; }
 
 #trigger-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 900; }
+
+#blog-headline {
+  margin: 40px 0 100px 0; }
 
 #committee-welcome-image {
   margin-top: 60px; }
@@ -96,8 +115,6 @@ i {
       margin: 0; }
     #committee figure figcaption dd {
       font-size: 1.6rem; }
-#committee p {
-  font-size: 1rem; }
 
 .fa-angle-up {
   font-size: 6rem !important; }
@@ -134,7 +151,7 @@ form :-ms-input-placeholder {
 
 /*NEW STUFF END*/
 .icon-list {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding: 5px;
@@ -172,8 +189,7 @@ body {
   overflow-x: hidden; }
 
 #sponsorship p {
-  margin: 30px 0;
-  font-size: 1.6rem; }
+  margin: 30px 0; }
 
 #sub-btn {
   background-color: #b4b4b4;
@@ -212,9 +228,6 @@ body {
 
 #homepage {
   display: none; }
-
-#about-2 p, #about-3 p {
-  font-size: 1rem; }
 
 #form-section {
   margin-top: 40px; }
@@ -289,9 +302,6 @@ a:hover, a:visited {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #live-body .icon-list, #live-body #trigger-overlay {
-    position: fixed; }
-
   #clickme {
     width: 20%;
     position: absolute;
@@ -308,25 +318,13 @@ a:hover, a:visited {
     width: 60%; }
 
   #sponsorship p {
-    margin: 30px 0;
-    font-size: 1.6rem; }
+    margin: 30px 0; }
 
   #slideout {
     left: 31%; }
 
-  #live-engage p {
-    font-size: 2rem; }
-
   #about-section {
-    min-height: 400px;
-    font-size: 2rem; }
-
-  #about-2 .about2, #about-3 .about2 {
-    font-size: 1.6rem; }
-  #about-2 .about3, #about-3 .about3 {
-    font-size: 1.6rem; }
-  #about-2 p, #about-3 p {
-    font-size: 1.6rem; }
+    min-height: 400px; }
 
   #committee figure {
     margin-bottom: 7px; }
@@ -355,7 +353,7 @@ a:hover, a:visited {
         right: 0;
         z-index: 9999; }
   #committee p {
-    font-size: .9rem; } }
+    font-size: 1.4rem; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #slideout {
@@ -404,9 +402,6 @@ a:hover, a:visited {
   #homepage h3 {
     font-size: 2rem; }
 
-  #live-engage p {
-    font-size: 1.6rem; }
-
   #committee figure {
     margin-bottom: 7px; }
     #committee figure figcaption {
@@ -432,9 +427,7 @@ a:hover, a:visited {
         top: -48px;
         left: 0;
         right: 0;
-        z-index: 9999; }
-  #committee p {
-    font-size: 1.4rem; } }
+        z-index: 9999; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1366px) {
   #homepage {
@@ -446,11 +439,7 @@ a:hover, a:visited {
     #homepage h3 {
       font-size: 2.4rem; }
 
-  #sponsorship p {
-    font-size: 3rem; }
-
   #legacy-info {
-    font-size: 2rem;
     margin-top: 30px; }
 
   #legacy-video {
@@ -465,24 +454,10 @@ a:hover, a:visited {
     #homepage h3 {
       font-size: 2.4rem; }
 
-  #sponsorship p {
-    font-size: 3.5rem; }
-
-  #live-engage p {
-    font-size: 2rem; }
-
   #legacy-info {
-    font-size: 3rem;
     margin-top: 30px; }
 
   #legacy-video {
-    margin-top: 60px; }
-
-  #about-2 .about2, #about-3 .about2 {
-    font-size: 2.3rem; }
-  #about-2 .about3, #about-3 .about3 {
-    font-size: 2.3rem; }
-  #about-2 p, #about-3 p {
-    font-size: 2.3rem; } }
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=styles.css.map */

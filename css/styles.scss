@@ -30,9 +30,13 @@ $light-blue:#5895fb;
 
 body{
     color: #000;
+    font-size: 1.4rem;
   }
 .blue-font{
   color: #2e3192;
+}
+.blue-bkg{
+  background-color:#2e3192;
 }
 .pwd-font{
   color: $pwd-blue;
@@ -40,8 +44,21 @@ body{
 .light-font{
   color: $light-blue;
 }
+.blog-number{
+  font-size: 13rem;
+}
 .wht-font{
   color: #fff;
+}
+.wht-bars{
+  color: #fff !important;
+}
+.blog-aside{
+  h2{
+    margin:0 0 53px 0;
+    font-size: 2rem;
+  }
+  margin-bottom: 60px;
 }
 i:hover{
   cursor: pointer;
@@ -60,10 +77,13 @@ i{
   position: fixed;
 }
 #trigger-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 900;
+}
+#blog-headline{
+  margin:40px 0 100px 0;
 }
 #committee-welcome-image {
     margin-top: 60px;
@@ -128,10 +148,6 @@ i{
       }
     }
   }
-  p{
-    font-size: 1rem;
-    
-  }
 }
 .fa-angle-up{
   font-size: 6rem !important;
@@ -177,7 +193,7 @@ form{
 /*NEW STUFF END*/
 
 .icon-list{
-    position: absolute;
+    position: fixed;
     top:0;
     right: 0;
     padding: 5px;
@@ -218,7 +234,6 @@ body {
 #sponsorship{
   p{
     margin:30px 0;
-    font-size: 1.6rem;
   }
 }
 #sub-btn{
@@ -258,11 +273,6 @@ body {
 }
 #homepage{
   display: none;
-}
-#about-2,#about-3{
-  p{
-      font-size: 1rem;
-  }
 }
 #form-section{
   margin-top: 40px;
@@ -351,11 +361,6 @@ a:hover,a:visited{
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px) {
-  #live-body{
-    .icon-list,#trigger-overlay{
-      position: fixed;
-    }
-  }
   #clickme {
     width: 20%;
     position: absolute;
@@ -374,31 +379,14 @@ a:hover,a:visited{
   #sponsorship{
     p{
       margin:30px 0;
-      font-size: 1.6rem;
     }
   }
   #slideout {
       left:31%;
   }
-  #live-engage{
-    p{
-      font-size: 2rem;
-    }
-  }
+ 
   #about-section{
     min-height: 400px;
-    font-size: 2rem
-  }
-  #about-2,#about-3{
-    .about2{
-        font-size: 1.6rem;
-    }
-    .about3{
-      font-size: 1.6rem;
-    }
-    p{
-      font-size: 1.6rem;
-    }
   }
     #committee{
     figure{
@@ -433,7 +421,7 @@ a:hover,a:visited{
       }
     }
       p{
-        font-size: .9rem;
+        font-size: 1.4rem;
         
       }
   }
@@ -501,11 +489,7 @@ a:hover,a:visited{
       font-size: 2rem;
     }
   }
-  #live-engage{
-    p{
-      font-size: 1.6rem;
-    }
-  }
+
   #committee{
     figure{
       margin-bottom:7px;
@@ -538,10 +522,6 @@ a:hover,a:visited{
         }
       }
     }
-      p{
-        font-size: 1.4rem;
-        
-      }
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -558,13 +538,8 @@ a:hover,a:visited{
       font-size: 2.4rem;
     }
   }
-  #sponsorship{
-    p{
-      font-size: 3rem;
-    }
-  }
+
   #legacy-info{
-    font-size: 2rem;
     margin-top:30px;
   }
   #legacy-video{
@@ -586,34 +561,12 @@ a:hover,a:visited{
       font-size: 2.4rem;
     }
   }
-  #sponsorship{
-    p{
-      font-size: 3.5rem;
-    }
-  }
-  #live-engage{
-    p{
-      font-size: 2rem;
-    }
-  }
+
   #legacy-info{
-    font-size: 3rem;
     margin-top:30px;
   }
   #legacy-video{
     margin-top: 60px;
-  }
-  #about-2,#about-3{
-      
-    .about2{
-      font-size: 2.3rem;
-    }
-    .about3{
-      font-size: 2.3rem;
-    }
-    p{
-      font-size: 2.3rem;
-    }
   }
 }
 

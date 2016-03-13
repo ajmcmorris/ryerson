@@ -83,7 +83,7 @@ if(isset($_POST['submit'])){
           <!--<iframe id="map-canvas" width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfRg6TTXL1IkRKzVtYzj1CWY&key=AIzaSyCNPJiFW72d2uMa0y_0fkaVJJatVqdy-Wo" allowfullscreen></iframe>
           --><address class="beebs-font text-left blk-font">
           <strong>Ryerson School of Interior Design.</strong><br>
-          303 Church Street<br>
+          302 Church Street<br>
           Toronto, ON, M5B 2K3<br>
         </address>
          </div>
